@@ -11,4 +11,4 @@ class Logger:
     @staticmethod
     def log(msg, log_file='./app.log'):
         with open(log_file, 'a') as f:
-            f.write(str(time()) + str(msg) + "\n")
+            f.write(str(time()) + " - " + str(msg) + "\n")
